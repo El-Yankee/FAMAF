@@ -1,0 +1,7 @@
+Para comprimir en el formato tar.gz se debe introducir el siguiente comando en la terminal:
+
+    tar   -czvf   labXX_apellido_nombre.tar.gz   nombre_carpeta_a_comprimir
+    
+Para descomprimir un formato tar.gz se debe introducir el siguiente comando en la terminal:
+    
+    tar   -xvf   nombre_archivo
