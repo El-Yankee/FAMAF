@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-typedef struct s_pqueue * pqueue;
+typedef struct s_pqueue *pqueue;
 
 typedef unsigned int pqueue_elem;
 
