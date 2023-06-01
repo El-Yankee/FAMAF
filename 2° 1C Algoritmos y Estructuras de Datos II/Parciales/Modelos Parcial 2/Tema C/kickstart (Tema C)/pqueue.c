@@ -19,6 +19,7 @@ struct s_node {
     pqueue_elem elem;
 
     struct s_node *next;
+
 };
 
 static struct s_node * create_node(pqueue_elem e) {
@@ -48,6 +49,12 @@ static struct s_node * destroy_node(struct s_node *node) {
     return node;
 }
 
+/*
+Respuesta para invrep que tambien es valida:
+En la implementacion, los nodos no acarrean su prioridad.
+No hay relacion entre size y max_priority.
+Asumo entonces que el invariante de representaciòn solo sera s != NULL.
+*/
 
 static bool invrep(pqueue q) {
 
@@ -85,9 +92,15 @@ pqueue pqueue_empty(priority_t min_priority) {
 
     q->size = 0u;
     q->min_prior = min_priority;
-    q->array = calloc(min_priority , sizeof(struct s_node *));
+    q->array = calloc(min_priority + 1 , sizeof(struct s_node *));
+
+    for (unsigned int i = 0u; i <= min_priority; i++){
+
+        q->array[i] = NULL;
+    }
     
     assert(invrep(q) && pqueue_is_empty(q));
+
     return q;
 }
 
@@ -125,7 +138,15 @@ pqueue pqueue_enqueue(pqueue q, pqueue_elem e, priority_t priority) {
 bool pqueue_is_empty(pqueue q) {
 
     assert(invrep(q));
-    return q->size == 0;
+    
+    bool empty = true;
+
+    for (unsigned int i = 0u; i <= q->min_prior; i++) {
+        
+        empty = empty && (q->array[i] == NULL);
+    }
+    
+    return empty;
 }
 
 pqueue_elem pqueue_peek(pqueue q) {
@@ -168,23 +189,14 @@ size_t pqueue_size(pqueue q) {
 
     assert(invrep(q));
 
-    unsigned int size=0;
-
-    size = q->size;
-   
-    return size;
+    return q->size;
 }
 
 pqueue pqueue_dequeue(pqueue q) {
 
     assert(invrep(q) && !pqueue_is_empty(q));
 
-    unsigned int i = 0;
-
-    while(q->array[i] == NULL){
-        
-        i ++;
-    }
+    priority_t i = pqueue_peek_priority(q);
 
     struct s_node *killme = q->array[i];
 
@@ -203,24 +215,12 @@ pqueue pqueue_destroy(pqueue q) {
 
     assert(invrep(q));
 
-    for (size_t i = 0; i <= q->min_prior; i++) {
-
-        struct s_node *node = q->array[i];
-
-        while (node != NULL) {
-
-
-            struct s_node *killme = node;
-
-            node = node->next;
-
-            killme = destroy_node(killme);
-        }
+    while(!pqueue_is_empty(q)){
+        
+        q = pqueue_dequeue(q);
     }
 
     free(q->array);
-
-    q->array = NULL;
 
     free(q);
 
