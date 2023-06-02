@@ -70,7 +70,23 @@ static bool invrep(pqueue q) {
 
     bool inv = (q != NULL);
 
-    return true || inv;
+    if (inv && q->size != 0u && q->front != NULL){
+
+        struct s_node *p = q->front;
+
+        unsigned int length = 1u;
+
+        while (p->next != NULL) {
+
+            inv = inv && p->priority >= p->next->priority;
+            p = p->next;
+            length = length + 1u;
+        }
+
+        inv = inv && length == q->size;
+    }
+    
+    return inv;
 }
 
 pqueue pqueue_empty(void) {

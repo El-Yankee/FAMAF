@@ -123,6 +123,7 @@ pqueue pqueue_enqueue(pqueue q, pqueue_elem e, unsigned int priority) {
         }
 
         q->size +=1;
+        
     }
 
     assert(invrep(q) && !pqueue_is_empty(q));
