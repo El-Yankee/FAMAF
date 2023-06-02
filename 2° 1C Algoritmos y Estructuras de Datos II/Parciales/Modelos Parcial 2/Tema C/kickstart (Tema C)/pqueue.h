@@ -60,6 +60,15 @@ priority_t pqueue_peek_priority(pqueue q);
  * POS: {q --> pqueue}
  */
 
+pqueue pqueue_copy(pqueue q);
+/*
+ * DESC: Return a copy pqueue 'q'
+ *
+ * PRE: {q --> pqueue}
+ *  copy = pqueue_copy(q);
+ * POS: {q --> pqueue}
+ */
+
 pqueue pqueue_dequeue(pqueue q);
 /*
  * DESC: Remove the element with the most urgent priority of the pqueue 'q'

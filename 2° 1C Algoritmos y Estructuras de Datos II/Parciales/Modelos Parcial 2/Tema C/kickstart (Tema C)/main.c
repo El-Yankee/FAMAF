@@ -81,12 +81,17 @@ int main(int argc, char *argv[]) {
     /* get the dequeue from the file */
     pqueue q = pqueue_from_file(filepath);
     pqueue q2 = pqueue_from_file(filepath);
+    pqueue q3 = pqueue_copy(q);
     /* call the function for show the priority queue of patients */
+    printf("Original:\n");
     pqueue_dump(q);
+    printf("Copia:\n");
+    pqueue_dump(q3);
 
     /* destroy instance of dequeue */
     q = pqueue_destroy(q);
     q2 = pqueue_destroy(q2);
+    q3 = pqueue_destroy(q3);
 
     return (EXIT_SUCCESS);
 }

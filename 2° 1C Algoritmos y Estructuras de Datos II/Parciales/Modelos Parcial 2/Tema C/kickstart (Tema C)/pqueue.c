@@ -192,6 +192,30 @@ size_t pqueue_size(pqueue q) {
     return q->size;
 }
 
+pqueue pqueue_copy(pqueue q){
+
+    assert(invrep(q));
+    
+    pqueue copy = pqueue_empty(q->min_prior);
+
+    for (size_t i = 0; i <= q->min_prior; i++) {
+
+        struct s_node *clone = q->array[i];
+
+        while (clone != NULL) {
+
+            copy = pqueue_enqueue(copy , clone->elem , i);
+
+            clone = clone->next;
+        }
+    }
+
+    assert(invrep(q));
+
+    return copy;
+
+}
+
 pqueue pqueue_dequeue(pqueue q) {
 
     assert(invrep(q) && !pqueue_is_empty(q));
