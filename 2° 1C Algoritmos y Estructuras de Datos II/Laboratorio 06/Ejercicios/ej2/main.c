@@ -20,5 +20,8 @@ int main (void) {
 
     printf("palabra 1 == palabra 2 : %s\n", string_eq(str1, str2) ? "True" : "False");
 
+    str1 = string_destroy(str1);
+    str2 = string_destroy(str2);
+
     return EXIT_SUCCESS;
 }

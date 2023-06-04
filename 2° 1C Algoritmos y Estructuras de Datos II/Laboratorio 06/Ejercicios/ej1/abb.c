@@ -54,6 +54,7 @@ abb abb_empty(void) {
     tree = NULL;
 
     assert(invrep(tree) && abb_is_empty(tree));
+
     return tree;
 }
 
@@ -63,24 +64,23 @@ abb abb_add(abb tree, abb_elem e) {
 
     if (tree == NULL){
 
-        abb p = malloc(sizeof(struct _s_abb));
+        tree = malloc(sizeof(struct _s_abb));
 
-        p->elem = e;
-        p->left = NULL;
-        p->right = NULL;
-
-        tree = p;
+        tree->elem = e;
+        tree->left = NULL;
+        tree->right = NULL;
 
     } else if (elem_less(e,tree->elem)){
 
         tree->left = abb_add(tree->left, e);
 
-    } else if (elem_less(tree->elem, e)) {
+    } else if (elem_less(tree->elem , e)) {
 
-        tree->right = abb_add(tree->right, e);
+        tree->right = abb_add(tree->right , e);
     }
 
-    assert(invrep(tree) && abb_exists(tree, e));
+    assert(invrep(tree) && abb_exists(tree , e));
+
     return tree;
 }
 
@@ -101,17 +101,17 @@ bool abb_exists(abb tree, abb_elem e) {
 
         exists = false;
 
-    } else if (elem_eq(tree->elem,e)) {
+    } else if (elem_eq(tree->elem , e)) {
 
         exists = true;
 
-    } else if (elem_less(tree->elem,e)) {
+    } else if (elem_less(tree->elem , e)) {
 
-        exists = abb_exists(tree->right,e);
+        exists = abb_exists(tree->right , e);
 
     } else {
 
-        exists = abb_exists(tree->left,e);
+        exists = abb_exists(tree->left , e);
     }
 
     return exists;
@@ -142,11 +142,11 @@ abb abb_remove(abb tree, abb_elem e) {
 
         if (elem_less(e,tree->elem)) {
 
-            tree->left = abb_remove(tree->left,e);
+            tree->left = abb_remove(tree->left , e);
 
-        } else if (elem_less(tree->elem,e)) {
+        } else if (elem_less(tree->elem , e)) {
 
-            tree->right = abb_remove(tree->right,e);
+            tree->right = abb_remove(tree->right , e);
 
         } else {
 
@@ -194,6 +194,7 @@ abb_elem abb_root(abb tree) {
     root = tree->elem;
 
     assert(abb_exists(tree, root));
+    
     return root;
 }
 

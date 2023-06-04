@@ -33,11 +33,11 @@ static struct s_node *create_node(queue_elem e) {
 
 static struct s_node *destroy_node(struct s_node *node) {
 
-    node->next=NULL;
+    node->next = NULL;
 
     free(node);
 
-    node=NULL;
+    node = NULL;
 
     return node;
 }
@@ -161,11 +161,11 @@ queue queue_destroy(queue q) {
 
     assert(invrep(q));
 
-    struct s_node *node=q->first;
+    struct s_node *node = q->first;
 
     while (node != NULL) {
 
-        struct s_node *killme=node;
+        struct s_node *killme = node;
 
         node = node->next;
 

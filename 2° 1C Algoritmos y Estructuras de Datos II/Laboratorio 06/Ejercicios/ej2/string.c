@@ -17,7 +17,7 @@ string string_create(const char *word) {
 
     str->length = strlen(word);
 
-    str->content = calloc(str->length, sizeof(char));
+    str->content = calloc(str->length + 1, sizeof(char));
 
     str->content = strncpy(str->content, word, str->length + 1);
 

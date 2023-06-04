@@ -33,11 +33,11 @@ static struct s_node *create_node(queue_elem e) {
 
 static struct s_node *destroy_node(struct s_node *node) {
 
-    node->next=NULL;
+    node->next = NULL;
 
     free(node);
 
-    node=NULL;
+    node = NULL;
 
     return node;
 }
@@ -112,7 +112,7 @@ unsigned int queue_size(queue q) {
 
     assert(invrep(q));
 
-    unsigned int size=0;
+    unsigned int size = 0;
 
     size = q->size;
    
@@ -180,7 +180,7 @@ void queue_dump(queue q, FILE *file) {
 
     file = file==NULL ? stdout: file;
 
-    struct s_node *node=q->first;
+    struct s_node *node = q->first;
 
     fprintf(file, "[ ");
 
