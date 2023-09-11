@@ -43,22 +43,22 @@
     - [X] Terminar `execute_scommand`         *(Diforte)*       *(Usaj)*
     - [X] Terminar `exec_simple_command`      *(Diforte)*       *(Usaj)*
     - [X] Terminar `execute_single_pipe`      *(Diforte)*       *(Usaj)*
-    - [X] Terminar `execute_pipeline`         *(Usaj)*
+    - [X] Terminar `execute_pipeline`         *(Usaj)*          *(Diforte)*
 
     - [X] Realizar los tests execute          *(Usaj)*
 
 - **builtin**:
     - [X] Terminar `builtin_is_internal`       *(Angeli)*       *(Usaj)*
     - [X] Terminar `builtin_alone`             *(Angeli)*       *(Usaj)*
-    - [] Terminar `run_cd`                     *(Angeli)*
+    - [X] Terminar `run_cd`                    *(Angeli)*       *(Usaj)*
     - [X] Terminar `run_help`                  *(Angeli)*       *(Usaj)*
     - [X] Terminar `run_exit`                  *(Angeli)*       *(Usaj)*
     - [X] Terminar `builtin_run`               *(Angeli)*       *(Usaj)*
 
-    - [] Realizar los tests builtin
+    - [X] Realizar los tests builtin           *(Usaj)*         *(Angeli)*
 
 - **mybash**:
-    - [X] Terminar funcion main                *(Usaj)*
+    - [X] Terminar funcion main                *(Usaj)*         *(Diforte)*
 
 - **extras**:
     - [X] Acomodar todas las descripciones de funciones en los .h   *(Usaj)*

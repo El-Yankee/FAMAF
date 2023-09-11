@@ -160,7 +160,7 @@ static void exec_simple_command (pipeline apipe) {
             // Tiene que esperar el padre?
             if (must_wait){
 
-                wait(NULL);
+                waitpid(pid, NULL, 0);
             }
         }
     }
@@ -170,9 +170,14 @@ static void execute_single_pipe(pipeline apipe) {
 
     scommand com1 = pipeline_front(apipe);
 
+    // Veo si es una ejecucion en background o no
+    bool must_wait = pipeline_get_wait(apipe);
+
     // Donde la posicion 0 sera el READ_END el extremo de lectura y la posicion 1 el WRTIE_END el extremo de escritura del pipe
     int fd[2];
+
     pipe(fd);
+
     int id1 = fork();
             
     if (id1 < 0) {
@@ -226,21 +231,21 @@ static void execute_single_pipe(pipeline apipe) {
 
                 // Ejecuto el comando en el hijo 2
                 execute_scommand(com2);
-
             }
 
         } else {
 
             close(fd[0]);
             close(fd[1]);
-
         }
 
+        // Tiene que esperar el padre?
+        if (must_wait){
+
+            waitpid(id1, NULL, 0);
+            waitpid(id2, NULL, 0);
+        }
     }
-
-    wait(NULL);
-    wait(NULL);
-
 }
 
 void execute_pipeline (pipeline apipe) {

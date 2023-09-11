@@ -38,8 +38,6 @@ int main(int argc, char *argv[]) {
         show_prompt();
 
         pipe = parse_pipeline(input);
-        
-        quit = parser_at_eof(input);
 
         if (pipe != NULL){
 
@@ -47,6 +45,8 @@ int main(int argc, char *argv[]) {
 
             pipe = pipeline_destroy(pipe);
         }
+
+        quit = parser_at_eof(input);
     }
 
     input = parser_destroy(input);

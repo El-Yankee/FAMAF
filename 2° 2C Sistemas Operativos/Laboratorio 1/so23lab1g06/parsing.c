@@ -1,3 +1,4 @@
+#include <assert.h>
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -11,40 +12,41 @@ static scommand parse_scommand(Parser p) {
     scommand command = scommand_new();
 
     arg_kind_t type;
+
     char *arg = parser_next_argument(p, &type);
 
-    // Revisamos si esta vacio o que lo primero que aparece sea un comando. Si no lo es, entonces el orden es incorrecto.
-    if (type != ARG_NORMAL || arg == NULL) {
-
-        return NULL;
-    }
-
-    // Vamos agregando el comando, sus argumentos y sus redirecciones a command
-    // Esta implementacion es algo flexible. El formato puede ser:
-    // cmd -arg -arg ... > redir out < redir in
-    // cmd -arg -arg ... < redir in > redir out 
-
-    // Primero buscamos el comando y sus argumentos (si tiene)
-    while (type == ARG_NORMAL && arg != NULL && !parser_at_eof(p)) {
-
-        scommand_push_back(command, arg);
-        arg = parser_next_argument(p, &type);
-    }
-
-    // Luego buscamos las redirecciones (si tiene)
+    // Recorremos todo el comando tomando los datos necesarios
+    // arg es el dato y type el tipo del dato
     while (arg != NULL) {
 
-        if (type == ARG_OUTPUT) {
+        if (type == ARG_NORMAL) {
 
-            scommand_set_redir_out(command, arg);
-            arg = parser_next_argument(p, &type);
+            // Si es de tipo normal lo agregamos
+            scommand_push_back(command , arg);
 
         } else if (type == ARG_INPUT) {
 
-            scommand_set_redir_in(command, arg);
-            arg = parser_next_argument(p, &type);
-            
+            // Si es redireccion de entrada, la seteamos
+            scommand_set_redir_in(command , arg);
+
+        } else if (type == ARG_OUTPUT) {
+
+            // Si es redireccion de salida, la seteamos
+            scommand_set_redir_out(command , arg);
         }
+
+        // Busco el siguiente dato
+        arg = parser_next_argument(p, &type);
+    }
+
+    // Cuando el arg esta vacio, vemos cual fue el ultimo tipo que encontro
+    // Se puede dar el caso de tener redirecciones vacias, lo cual estan mal
+    // Tambien puede pasar que nunca se agrego nada ya que estaba vacio
+    if(type == ARG_INPUT || type == ARG_OUTPUT || scommand_is_empty(command)) {
+        
+        command = scommand_destroy(command);
+
+        command = NULL;
     }
   
     return command;
@@ -53,60 +55,52 @@ static scommand parse_scommand(Parser p) {
 
 pipeline parse_pipeline(Parser p) {
 
+    assert(p != NULL && !parser_at_eof(p)); 
+
     // Creamos el pipeline donde guardaremos los scommands
     pipeline result = pipeline_new();
 
     scommand cmd = NULL;
 
-    bool error = false, another_pipe=true;
+    bool error = false, another_pipe = true;
 
-    // Buscamos el primer scommand
-    cmd = parse_scommand(p);
-
-    error = (cmd==NULL); /* Comando inválido al empezar */
-
+    // Recorremos mientra no tengamos errores y haya pipes
     while (another_pipe && !error) {
-    
-        // Guardamos el scommand en el pipeline
-        pipeline_push_back(result , cmd);
+        
+        // Buscamos el primer scommand
+        cmd = parse_scommand(p);
 
-        // Quitamos los espacios en blanco
-        parser_skip_blanks(p);
+        // Vemos si hubo algun error
+        error = (cmd == NULL); 
 
-        // Vemos si hay un pipe
-        parser_op_pipe(p, &another_pipe);
+        // Si el comando que obtuvimos esta bien, lo guardamos en el pipe
+        if (!error) {
 
-        if (another_pipe) {
+            // Guardamos el scommand en el pipeline
+            pipeline_push_back(result , cmd);
 
-            // Si hay un pipe, buscamos el siguiente scommand
-            cmd = parse_scommand(p);
+            // Vemos si hay un pipe
+            parser_op_pipe(p, &another_pipe);
         }
+    }
         
-        // Vemos si el scommand cumple el formato
-        error = (cmd==NULL);
+    // Si todavia no llegue al final, busco si hay un &
+    if (!parser_at_eof(p)) {
+
+        bool is_background;
+
+        parser_op_background(p, &is_background);
+
+        // Indico si debe esperar o no
+        pipeline_set_wait(result, !is_background); 
+
+        // Una vez pasado el &, borramos todo lo que sobre
+        parser_skip_blanks(p); 
+        parser_garbage(p, &error);
     }
 
-    /* Opcionalmente un OP_BACKGROUND al final */
-    bool is_background;
-
-    // Vemos si se encuentra el & al final
-    parser_op_background(p, &is_background);
-    
-    if (is_background) {
-        
-        // Si se encuentra entonces indicamos que no se debe esperar
-        pipeline_set_wait(result , false);
-    }
-
-    /* Tolerancia a espacios posteriores */
-    parser_skip_blanks(p);
-
-    /* Consumir todo lo que hay inclusive el \n */
-    bool garbage;
-    parser_garbage(p, &garbage);
-
-    /* Si hubo error, hacemos cleanup */
-    if (error) {
+    // Si tuvimos un error o el pipe esta vacio, borramos todo
+    if (error || pipeline_is_empty(result)) {
 
         result = pipeline_destroy(result);
         result = NULL;
