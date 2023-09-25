@@ -10,8 +10,8 @@
 
 - **user_program**:
 
-    - [] Terminar `pingpong`            
+    - [X] Terminar `pingpong`    *Usaj , Angeli y Di Forte*            
 
 - **extras**:
     - [X] Crear syscall y user_program de prueba    *Angeli*
-    - [] Realizar los tests
+    - [X] Realizar los tests                        *Usaj*

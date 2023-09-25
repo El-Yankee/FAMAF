@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
     */
     for (unsigned int i = 0; i < rounds; i++) {
 
-      // Modifico el semaforo de ping
+      // Modifico el semaforo de pong
       error = sem_down(father_sem);
       // Reviso que se haya modificado bien
       if (error == 0 ) {
@@ -134,7 +134,7 @@ int main(int argc, char *argv[])
       // Escribo pong
       printf("    pong\n");
 
-      // Modifico el semaforo de pong
+      // Modifico el semaforo de ping
       error = sem_up(son_sem);
       // Reviso que se haya modificado bien
       if (error == 0 ) {
