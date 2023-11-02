@@ -1,0 +1,776 @@
+[
+    {
+        "command": "iobench",
+        "output": {
+            "other": [
+                {
+                    "time": 0.0,
+                    "content": "iobench"
+                },
+                {
+                    "time": 199.33,
+                    "content": "Termino iobench 3: total ops 276864u -->"
+                },
+                {
+                    "time": 209.71,
+                    "content": "PID:3 Prio:2 ChosenCounter:456574 LastExec:2118"
+                }
+            ],
+            "iobench3": [
+                {
+                    "time": 0.0,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 10.54,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 21.06,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 31.56,
+                    "content": "3: 7232 OPW100T, 7232 OPR100T"
+                },
+                {
+                    "time": 41.98,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 52.49,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 63.01,
+                    "content": "3: 7232 OPW100T, 7232 OPR100T"
+                },
+                {
+                    "time": 73.47,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 83.94,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 94.47,
+                    "content": "3: 7232 OPW100T, 7232 OPR100T"
+                },
+                {
+                    "time": 104.91,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 115.43,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 125.91,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 136.36,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 146.88,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 157.4,
+                    "content": "3: 7232 OPW100T, 7232 OPR100T"
+                },
+                {
+                    "time": 167.82,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 178.31,
+                    "content": "3: 7296 OPW100T, 7296 OPR100T"
+                },
+                {
+                    "time": 188.78,
+                    "content": "3: 7360 OPW100T, 7360 OPR100T"
+                }
+            ]
+        }
+    },
+    {
+        "command": "cpubench",
+        "output": {
+            "other": [
+                {
+                    "time": 0.0,
+                    "content": "cpubench"
+                },
+                {
+                    "time": 201.16,
+                    "content": "Termino cpubench 3: total ops 2684354560u -->"
+                },
+                {
+                    "time": 209.76,
+                    "content": "PID:3 Prio:0 ChosenCounter:2104 LastExec:2119"
+                }
+            ],
+            "cpubench3": [
+                {
+                    "time": 0.0,
+                    "content": "3: 9261 MFLOP100T"
+                },
+                {
+                    "time": 10.43,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 21.07,
+                    "content": "3: 9276 MFLOP100T"
+                },
+                {
+                    "time": 31.72,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 42.36,
+                    "content": "3: 9276 MFLOP100T"
+                },
+                {
+                    "time": 53.01,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 63.66,
+                    "content": "3: 9261 MFLOP100T"
+                },
+                {
+                    "time": 74.08,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 84.73,
+                    "content": "3: 9261 MFLOP100T"
+                },
+                {
+                    "time": 95.15,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 105.79,
+                    "content": "3: 9276 MFLOP100T"
+                },
+                {
+                    "time": 116.44,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 127.08,
+                    "content": "3: 9276 MFLOP100T"
+                },
+                {
+                    "time": 137.73,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 148.38,
+                    "content": "3: 9276 MFLOP100T"
+                },
+                {
+                    "time": 159.02,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 169.66,
+                    "content": "3: 9261 MFLOP100T"
+                },
+                {
+                    "time": 180.09,
+                    "content": "3: 9368 MFLOP100T"
+                },
+                {
+                    "time": 190.74,
+                    "content": "3: 9261 MFLOP100T"
+                }
+            ]
+        }
+    },
+    {
+        "command": "iobench &\n cpubench &",
+        "output": {
+            "other": [
+                {
+                    "time": 0.0,
+                    "content": "iobench &"
+                },
+                {
+                    "time": 0.0,
+                    "content": "cpubench &"
+                },
+                {
+                    "time": 202.84,
+                    "content": "Termino cpubench 6: total ops 3690987520u -->"
+                },
+                {
+                    "time": 209.71,
+                    "content": "PID:6 Prio:0 ChosenCounter:2103 LastExec:2118"
+                },
+                {
+                    "time": 209.77,
+                    "content": "Termino iobench 4: total ops 1408u -->"
+                },
+                {
+                    "time": 209.78,
+                    "content": "PID:4 Prio:2 ChosenCounter:2237 LastExec:2119"
+                }
+            ],
+            "cpubench6": [
+                {
+                    "time": 0.0,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 10.6,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 21.16,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 31.74,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 42.84,
+                    "content": "6: 9462 MFLOP100T"
+                },
+                {
+                    "time": 62.84,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 63.46,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 82.84,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 84.61,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 102.84,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 105.75,
+                    "content": "6: 9462 MFLOP100T"
+                },
+                {
+                    "time": 122.84,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 126.89,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 142.84,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 148.04,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 162.84,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 169.2,
+                    "content": "6: 9462 MFLOP100T"
+                },
+                {
+                    "time": 182.84,
+                    "content": "6: 9368 MFLOP100T"
+                },
+                {
+                    "time": 190.34,
+                    "content": "6: 9368 MFLOP100T"
+                }
+            ],
+            "iobench4": [
+                {
+                    "time": 42.3,
+                    "content": "4: 58 OPW100T, 58 OPR100T"
+                },
+                {
+                    "time": 52.88,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 74.03,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 95.17,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 116.32,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 137.46,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 158.62,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 179.76,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 200.91,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 209.71,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                }
+            ]
+        }
+    },
+    {
+        "command": "cpubench &\n cpubench &",
+        "output": {
+            "other": [
+                {
+                    "time": 0.0,
+                    "content": "cpubench &"
+                },
+                {
+                    "time": 0.0,
+                    "content": "cpubench &"
+                },
+                {
+                    "time": 204.03,
+                    "content": "Termino cpubench 4: total ops 1207959552u -->"
+                },
+                {
+                    "time": 209.68,
+                    "content": "PID:4 Prio:0 ChosenCounter:1052 LastExec:2118"
+                },
+                {
+                    "time": 209.68,
+                    "content": "Termino cpubench 6: total ops 1811939328u -->"
+                },
+                {
+                    "time": 209.8,
+                    "content": "PID:6 Prio:0 ChosenCounter:1054 LastExec:2119"
+                }
+            ],
+            "cpubench4": [
+                {
+                    "time": 0.0,
+                    "content": "4: 4429 MFLOP100T"
+                },
+                {
+                    "time": 10.63,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 21.4,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 32.18,
+                    "content": "4: 4691 MFLOP100T"
+                },
+                {
+                    "time": 42.94,
+                    "content": "4: 4691 MFLOP100T"
+                },
+                {
+                    "time": 53.61,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 64.39,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 75.16,
+                    "content": "4: 4691 MFLOP100T"
+                },
+                {
+                    "time": 85.93,
+                    "content": "4: 4691 MFLOP100T"
+                },
+                {
+                    "time": 96.6,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 107.37,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 118.14,
+                    "content": "4: 4691 MFLOP100T"
+                },
+                {
+                    "time": 128.82,
+                    "content": "4: 4691 MFLOP100T"
+                },
+                {
+                    "time": 139.6,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 150.37,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 161.14,
+                    "content": "4: 4691 MFLOP100T"
+                },
+                {
+                    "time": 171.81,
+                    "content": "4: 4737 MFLOP100T"
+                },
+                {
+                    "time": 182.58,
+                    "content": "4: 4691 MFLOP100T"
+                },
+                {
+                    "time": 193.35,
+                    "content": "4: 4737 MFLOP100T"
+                }
+            ],
+            "cpubench6": [
+                {
+                    "time": 10.44,
+                    "content": "6: 4983 MFLOP100T"
+                },
+                {
+                    "time": 21.12,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 31.9,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 42.67,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 53.44,
+                    "content": "6: 4783 MFLOP100T"
+                },
+                {
+                    "time": 64.12,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 74.89,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 85.67,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 96.44,
+                    "content": "6: 4783 MFLOP100T"
+                },
+                {
+                    "time": 107.11,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 117.89,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 128.66,
+                    "content": "6: 4737 MFLOP100T"
+                },
+                {
+                    "time": 139.43,
+                    "content": "6: 4737 MFLOP100T"
+                },
+                {
+                    "time": 150.11,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 160.88,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 171.65,
+                    "content": "6: 4737 MFLOP100T"
+                },
+                {
+                    "time": 182.32,
+                    "content": "6: 4737 MFLOP100T"
+                },
+                {
+                    "time": 193.09,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 203.87,
+                    "content": "6: 4737 MFLOP100T"
+                }
+            ]
+        }
+    },
+    {
+        "command": "iobench &\n cpubench &\n cpubench &",
+        "output": {
+            "other": [
+                {
+                    "time": 0.0,
+                    "content": "iobench &"
+                },
+                {
+                    "time": 0.0,
+                    "content": "cpubench &"
+                },
+                {
+                    "time": 0.0,
+                    "content": "cpubench &"
+                },
+                {
+                    "time": 205.34,
+                    "content": "Termino cpubench 6: total ops 1207959552u -->"
+                },
+                {
+                    "time": 209.79,
+                    "content": "PID:6 Prio:0 ChosenCounter:1052 LastExec:2119"
+                },
+                {
+                    "time": 209.79,
+                    "content": "Termino cpubench 8: total ops 1207959552u -->"
+                },
+                {
+                    "time": 209.93,
+                    "content": "PID:8 Prio:0 ChosenCounter:1054 LastExec:2120"
+                },
+                {
+                    "time": 209.98,
+                    "content": "Termino iobench 4: total ops 1408u -->"
+                },
+                {
+                    "time": 209.99,
+                    "content": "PID:4 Prio:2 ChosenCounter:2217 LastExec:2121"
+                }
+            ],
+            "cpubench6": [
+                {
+                    "time": 0.0,
+                    "content": "6: 4385 MFLOP100T"
+                },
+                {
+                    "time": 10.68,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 21.5,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 42.84,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 53.66,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 64.49,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 75.32,
+                    "content": "6: 4645 MFLOP100T"
+                },
+                {
+                    "time": 85.72,
+                    "content": "6: 4645 MFLOP100T"
+                },
+                {
+                    "time": 96.63,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 107.45,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 118.28,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 129.1,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 139.92,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 150.85,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 161.67,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 172.49,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 183.33,
+                    "content": "6: 4691 MFLOP100T"
+                },
+                {
+                    "time": 193.73,
+                    "content": "6: 4645 MFLOP100T"
+                },
+                {
+                    "time": 204.65,
+                    "content": "6: 4691 MFLOP100T"
+                }
+            ],
+            "cpubench8": [
+                {
+                    "time": 10.58,
+                    "content": "8: 4983 MFLOP100T"
+                },
+                {
+                    "time": 21.38,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 32.19,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 40.84,
+                    "content": "8: 4584 MFLOP100T"
+                },
+                {
+                    "time": 43.01,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 60.84,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 64.62,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 80.84,
+                    "content": "8: 4630 MFLOP100T"
+                },
+                {
+                    "time": 86.34,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 100.84,
+                    "content": "8: 4645 MFLOP100T"
+                },
+                {
+                    "time": 107.97,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 120.84,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 129.58,
+                    "content": "8: 4645 MFLOP100T"
+                },
+                {
+                    "time": 140.84,
+                    "content": "8: 4645 MFLOP100T"
+                },
+                {
+                    "time": 160.84,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 162.01,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 180.84,
+                    "content": "8: 4691 MFLOP100T"
+                },
+                {
+                    "time": 183.63,
+                    "content": "8: 4630 MFLOP100T"
+                },
+                {
+                    "time": 200.84,
+                    "content": "8: 4645 MFLOP100T"
+                }
+            ],
+            "iobench4": [
+                {
+                    "time": 32.33,
+                    "content": "4: 64 OPW100T, 64 OPR100T"
+                },
+                {
+                    "time": 53.81,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 75.53,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 97.15,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 118.78,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 140.39,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 151.2,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 172.82,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 194.54,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                },
+                {
+                    "time": 209.93,
+                    "content": "4: 33 OPW100T, 33 OPR100T"
+                }
+            ]
+        }
+    }
+]
+
