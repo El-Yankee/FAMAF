@@ -64,6 +64,8 @@ Pudimos repartirnos mejor las tareas y mantuvimos un ritmo fluido de trabajo. No
 - La heurística 2: La idea de esta heurística es continuar con la forma más intuitiva de encontrar entidades entre palabras, que inicien con mayúsculas, pero aplicar más filtros y requisitos para que sean consideradas como tales. Esto en teoría debería dar mejores resultados porque se estaría evitando la detección de “falsos positivos”. Los requisitos extras que se implementaron fueron que las palabras tengan más de 3 letras para evitar palabras como IVA, ONG, CPU, CD, etc. y que no se tomen las palabras en mayúsculas que sean el inicio de una oración. Si bien esta heurística no es perfecta, mejoró bastante los resultados en los textos utilizados en este laboratorio. Podría haber ejemplos en los cuales empeoren los resultados y obviamente se puede seguir perfeccionando, pero nos pareció una mejora buena para la mayoría de casos reales.
 - La heurística 3: Compara cada palabra del texto con una lista de palabras extraídas de un diccionario convencional, donde todas son sustantivos comunes, adjetivos, pronombres, etc. Por ende las que no pertenecen a la lista son posibles candidatos a ser nombres propios y por lo tanto entidades.
 
-# 4. Extras
+# 4. Correcciones para la Reentrega
 
-No se realizó ninguna tarea extra
+- [x] Corregir FeedParser
+- [x] Crear subclases de las categorias
+- [x] Modularizar run

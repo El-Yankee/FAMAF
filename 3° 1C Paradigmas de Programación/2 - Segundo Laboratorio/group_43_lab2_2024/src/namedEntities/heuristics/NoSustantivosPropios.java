@@ -10,7 +10,7 @@ import utils.JSONParser;
 
 public class NoSustantivosPropios {
 
-    public static List<String> extractCandidates1(String text) throws IOException {
+    public static List<String> extractCandidates(String text) throws IOException {
         List<String> candidates = new ArrayList<>();
 
         GramaticaData gramatica = JSONParser.parseJsonGramaticaData("src/data/gramatica.json");

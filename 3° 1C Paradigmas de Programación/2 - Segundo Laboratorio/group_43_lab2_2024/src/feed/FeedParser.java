@@ -44,16 +44,34 @@ public class FeedParser {
             // Organiza los datos
             doc.getDocumentElement().normalize();
 
-            // Guardo todos los elementos en una lista
-            List<String> title = getDataByTagName(doc, "title");
-            List<String> description = getDataByTagName(doc, "description");
-            List<String> pubDate = getDataByTagName(doc, "pubDate");
-            List<String> link = getDataByTagName(doc, "link");
+            // Obtiene todos los elementos 'item'
+            NodeList itemNodes = doc.getElementsByTagName("item");
 
-            for (int i = 0; i < title.size(); i++) {
+            // Itera sobre cada elemento 'item'
+            for (int i = 0; i < itemNodes.getLength(); i++) {
+                Node itemNode = itemNodes.item(i);
 
-                Articles.add(new Article(title.get(i), description.get(i), pubDate.get(i), link.get(i)));
+                if (itemNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element itemElement = (Element) itemNode;
 
+                    // Obtiene los datos de cada etiqueta
+                    String title = itemElement.getElementsByTagName("title").item(0).getTextContent();
+
+                    // Obtengo el contenido de la etiqueta description
+                    NodeList descriptionNodes = itemElement.getElementsByTagName("description");
+                    String description = " ";
+
+                    // Si la etiqueta description tiene contenido, lo guardo
+                    if (descriptionNodes.getLength() > 0) {
+                        description = descriptionNodes.item(0).getTextContent();
+                    }
+
+                    String pubDate = itemElement.getElementsByTagName("pubDate").item(0).getTextContent();
+                    String link = itemElement.getElementsByTagName("link").item(0).getTextContent();
+
+                    // Crea un nuevo artículo y lo añade a la lista
+                    Articles.add(new Article(title, description, pubDate, link));
+                }
             }
 
         } catch (Exception e) {
@@ -62,24 +80,6 @@ public class FeedParser {
         }
 
         return Articles;
-    }
-
-    // Este metodo se encarga de guardar todos los datos de un tipo de etiqueta (Ej:
-    // guarda todos los title)
-    public static List<String> getDataByTagName(Document doc, String TagName) {
-        List<String> list = new ArrayList<>();
-
-        NodeList nodeList = doc.getElementsByTagName(TagName);
-        for (int i = 0; i < nodeList.getLength(); i++) {
-            Node node = nodeList.item(i);
-
-            if (node.getNodeType() == Node.ELEMENT_NODE) {
-                Element elemento = (Element) node;
-                list.add(elemento.getTextContent());
-            }
-        }
-
-        return list;
     }
 
     public static String fetchFeed(String feedURL) throws MalformedURLException, IOException, Exception {

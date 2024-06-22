@@ -32,6 +32,10 @@ public class DictionaryData {
         return keywords;
     }
 
+    public boolean isKeywordinDictionary(String key) {
+        return getKeywords().contains(key);
+    }
+
     public void print() {
         System.out.println("Label: " + label);
         System.out.println("Category: " + Category);

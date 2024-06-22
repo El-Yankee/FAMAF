@@ -1,5 +1,8 @@
 package feed;
 
+import namedEntities.NamedEntity;
+import namedEntities.categories.*;
+
 public class Article {
 	private String title;
 	private String description;
@@ -53,5 +56,28 @@ public class Article {
 		System.out.println("Publication Date: " + getPubDate());
 		System.out.println("Link: " + getLink());
 		System.out.println("********************************************************************************");
+	}
+
+	public static NamedEntity asignCategory(NamedEntity ne) {
+
+		String category = ne.getCategory();
+
+		if (category != null) {
+
+			switch (category) {
+				case "Person":
+					Person p = new Person(ne.getName(), ne.getCategory(), ne.getTopics(), 11);
+					return p;
+				case "Organization":
+					Organization org = new Organization(ne.getName(), ne.getCategory(), ne.getTopics(), null);
+					return org;
+				case "Location":
+					Location loc = new Location(ne.getName(), ne.getCategory(), ne.getTopics(), null);
+					return loc;
+				default:
+					return ne;
+			}
+		}
+		return null;
 	}
 }
