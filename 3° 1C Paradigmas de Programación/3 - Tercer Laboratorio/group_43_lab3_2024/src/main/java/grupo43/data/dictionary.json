@@ -1,0 +1,514 @@
+[
+  {
+    "label": "Messi",
+    "Category": "PERSON",
+    "Topics": ["SPORTS"],
+    "keywords": [
+      "Messi",
+      "Lionel Messi",
+      "Leo Messi",
+      "Lionel Andrés Messi Cuccittini"
+    ]
+  },
+  {
+    "label": "Ronaldo",
+    "Category": "PERSON",
+    "Topics": ["SPORTS"],
+    "keywords": [
+      "Ronaldo",
+      "Cristiano Ronaldo",
+      "CR7",
+      "Cristiano Ronaldo dos Santos Aveiro"
+    ]
+  },
+  {
+    "label": "Nadal",
+    "Category": "PERSON",
+    "Topics": ["SPORTS"],
+    "keywords": ["Nadal", "Rafael Nadal", "Rafael Nadal Parera"]
+  },
+  {
+    "label": "Federer",
+    "Category": "PERSON",
+    "Topics": ["SPORTS"],
+    "keywords": ["Federer", "Roger Federer", "Roger Federer"]
+  },
+  {
+    "label": "Djokovic",
+    "Category": "PERSON",
+    "Topics": ["SPORTS"],
+    "keywords": ["Djokovic", "Novak Djokovic", "Novak Djokovic"]
+  },
+  {
+    "label": "Hamilton",
+    "Category": "PERSON",
+    "Topics": ["SPORTS"],
+    "keywords": ["Hamilton", "Lewis Hamilton", "Lewis Carl Davidson Hamilton"]
+  },
+  {
+    "label": "Lebron",
+    "Category": "PERSON",
+    "Topics": ["SPORTS"],
+    "keywords": ["Lebron", "Lebron James", "LeBron Raymone James Sr."]
+  },
+  {
+    "label": "Milei",
+    "Category": "PERSON",
+    "Topics": ["POLITICS", "ECONOMICS"],
+    "keywords": ["Milei", "Javier Milei", "Javier Gerardo Milei"]
+  },
+  {
+    "label": "Espert",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": ["Espert", "José Luis Espert", "José Luis Espert"]
+  },
+  {
+    "label": "Macri",
+    "Category": "PERSON",
+    "Topics": ["POLITICS", "BUSINESS"],
+    "keywords": ["Macri", "Mauricio Macri", "Mauricio Macri"]
+  },
+  {
+    "label": "Fernandez",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": ["Fernandez", "Alberto Fernandez"]
+  },
+  {
+    "label": "Cristina",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": [
+      "Cristina",
+      "Cristina Fernandez",
+      "Cristina Fernandez de Kirchner",
+      "CFK"
+    ]
+  },
+  {
+    "label": "Larreta",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": ["Larreta", "Horacio Rodriguez Larreta"]
+  },
+  {
+    "label": "Kicillof",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": ["Kicillof", "Axel Kicillof"]
+  },
+  {
+    "label": "Schiaretti",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": ["Schiaretti", "Juan Schiaretti"]
+  },
+  {
+    "label": "Llaryora",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": ["Llaryora", "Martin Llaryora"]
+  },
+  {
+    "label": "Trump",
+    "Category": "PERSON",
+    "Topics": ["POLITICS", "BUSINESS"],
+    "keywords": ["Trump", "Donald Trump", "Donald John Trump"]
+  },
+  {
+    "label": "Biden",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": ["Biden", "Joe Biden", "Joseph Robinette Biden Jr."]
+  },
+  {
+    "label": "Putin",
+    "Category": "PERSON",
+    "Topics": ["POLITICS"],
+    "keywords": ["Putin", "Vladimir Putin", "Vladimir Vladimirovich Putin"]
+  },
+  {
+    "label": "Musk",
+    "Category": "PERSON",
+    "Topics": ["TECHNOLOGY", "BUSINESS"],
+    "keywords": ["Musk", "Elon Musk", "Elon Reeve Musk"]
+  },
+  {
+    "label": "Galperin",
+    "Category": "PERSON",
+    "Topics": ["BUSINESS"],
+    "keywords": ["Galperin", "Marcos Galperin", "Marcos Eduardo Galperin"]
+  },
+  {
+    "label": "Bezos",
+    "Category": "PERSON",
+    "Topics": ["BUSINESS"],
+    "keywords": ["Bezos", "Jeff Bezos", "Jeffrey Preston Bezos"]
+  },
+  {
+    "label": "Gates",
+    "Category": "PERSON",
+    "Topics": ["TECHNOLOGY", "BUSINESS"],
+    "keywords": ["Gates", "Bill Gates", "William Henry Gates III"]
+  },
+  {
+    "label": "Jobs",
+    "Category": "PERSON",
+    "Topics": ["TECHNOLOGY", "BUSINESS"],
+    "keywords": ["Jobs", "Steve Jobs", "Steven Paul Jobs"]
+  },
+  {
+    "label": "Lali",
+    "Category": "PERSON",
+    "Topics": ["ENTERTAINMENT"],
+    "keywords": ["Lali", "Lali Espósito", "Mariana Espósito"]
+  },
+  {
+    "label": "Tini",
+    "Category": "PERSON",
+    "Topics": ["ENTERTAINMENT"],
+    "keywords": [
+      "Tini",
+      "Martina Stoessel",
+      "Martina Alejandra Stoessel Muzlera"
+    ]
+  },
+  {
+    "label": "DuaLipa",
+    "Category": "PERSON",
+    "Topics": ["ENTERTAINMENT"],
+    "keywords": ["Dua", "Dua Lipa", "Dua Lipa"]
+  },
+  {
+    "label": "Ariana",
+    "Category": "PERSON",
+    "Topics": ["ENTERTAINMENT"],
+    "keywords": ["Ariana", "Ariana Grande", "Ariana Grande-Butera"]
+  },
+  {
+    "label": "Taylor",
+    "Category": "PERSON",
+    "Topics": ["ENTERTAINMENT"],
+    "keywords": ["Taylor", "Taylor Swift", "Taylor Alison Swift"]
+  },
+  {
+    "label": "Google",
+    "Category": "ORGANIZATION",
+    "Topics": ["TECHNOLOGY"],
+    "keywords": ["Google", "Google Inc.", "Google LLC"]
+  },
+  {
+    "label": "Apple",
+    "Category": "ORGANIZATION",
+    "Topics": ["TECHNOLOGY"],
+    "keywords": ["Apple", "Apple Inc."]
+  },
+  {
+    "label": "MercadoLibre",
+    "Category": "ORGANIZATION",
+    "Topics": ["BUSINESS"],
+    "keywords": ["Mercado Libre", "MercadoLibre"]
+  },
+  {
+    "label": "Buenos Aires",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Buenos Aires", "CABA", "Ciudad Autónoma de Buenos Aires"]
+  },
+  {
+    "label": "Argentina",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Argentina", "Argentine Republic"]
+  },
+  {
+    "label": "United States",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": [
+      "United States",
+      "USA",
+      "United States of America",
+      "Estados Unidos"
+    ]
+  },
+  {
+    "label": "Russia",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Russia", "Russian Federation", "Rusia", "Federación Rusa"]
+  },
+  {
+    "label": "China",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": [
+      "China",
+      "People's Republic of China",
+      "República Popular China"
+    ]
+  },
+  {
+    "label": "Brazil",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Brazil", "Brasil"]
+  },
+  {
+    "label": "Cordoba",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Cordoba", "Córdoba", "Córdoba, Argentina"]
+  },
+  {
+    "label": "Chaco",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Chaco", "Chaco Province", "Chaco, Argentina"]
+  },
+  {
+    "label": "Mendoza",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Mendoza", "Mendoza Province", "Mendoza, Argentina"]
+  },
+  {
+    "label": "Tucuman",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Tucuman", "Tucumán, Argentina"]
+  },
+  {
+    "label": "Salta",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Salta", "Salta, Argentina"]
+  },
+  {
+    "label": "Jujuy",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Jujuy", "Jujuy, Argentina"]
+  },
+  {
+    "label": "LaPampa",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["La Pampa", "La Pampa, Argentina"]
+  },
+  {
+    "label": "SanJuan",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["San Juan", "San Juan, Argentina"]
+  },
+  {
+    "label": "SanLuis",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["San Luis", "San Luis, Argentina"]
+  },
+  {
+    "label": "SantaCruz",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Santa Cruz", "Santa Cruz, Argentina"]
+  },
+  {
+    "label": "SantaFe",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Santa Fe", "Santa Fe, Argentina"]
+  },
+  {
+    "label": "SantiagoDelEstero",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Santiago del Estero", "Santiago del Estero, Argentina"]
+  },
+  {
+    "label": "TierraDelFuego",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Tierra del Fuego", "Tierra del Fuego, Argentina"]
+  },
+  {
+    "label": "Neuquen",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Neuquén", "Neuquén, Argentina"]
+  },
+  {
+    "label": "Rosario",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Rosario", "Rosario, Argentina"]
+  },
+  {
+    "label": "RiverPlate",
+    "Category": "ORGANIZATION",
+    "Topics": ["SPORTS"],
+    "keywords": ["River Plate", "Club Atlético River Plate", "River", "CARP"]
+  },
+  {
+    "label": "BocaJuniors",
+    "Category": "ORGANIZATION",
+    "Topics": ["SPORTS"],
+    "keywords": ["Boca Juniors", "Club Atlético Boca Juniors", "Boca", "CABJ"]
+  },
+  {
+    "label": "Talleres",
+    "Category": "ORGANIZATION",
+    "Topics": ["SPORTS"],
+    "keywords": ["Talleres", "Club Atlético Talleres", "Talleres de Córdoba"]
+  },
+  {
+    "label": "Belgrano",
+    "Category": "ORGANIZATION",
+    "Topics": ["SPORTS"],
+    "keywords": ["Belgrano", "Club Atlético Belgrano", "Belgrano de Córdoba"]
+  },
+  {
+    "label": "Instituto",
+    "Category": "ORGANIZATION",
+    "Topics": ["SPORTS"],
+    "keywords": [
+      "Instituto",
+      "Instituto Atlético Central Córdoba",
+      "Instituto de Córdoba"
+    ]
+  },
+  {
+    "label": "UxP",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["UxP", "Unión por la Patria"]
+  },
+  {
+    "label": "JxC",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["JxC", "Juntos por el Cambio"]
+  },
+  {
+    "label": "FIT",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["FIT", "Frente de Izquierda y de los Trabajadores"]
+  },
+  {
+    "label": "LLA",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["LLA", "La Libertad Avanza"]
+  },
+  {
+    "label": "FDT",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["FDT", "Frente de Todos"]
+  },
+  {
+    "label": "UCR",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["UCR", "Unión Cívica Radical"]
+  },
+  {
+    "label": "YPF",
+    "Category": "ORGANIZATION",
+    "Topics": ["BUSINESS"],
+    "keywords": ["YPF", "Yacimientos Petrolíferos Fiscales"]
+  },
+  {
+    "label": "Shell",
+    "Category": "ORGANIZATION",
+    "Topics": ["BUSINESS"],
+    "keywords": ["Shell", "Royal Dutch Shell"]
+  },
+  {
+    "label": "AXION",
+    "Category": "ORGANIZATION",
+    "Topics": ["BUSINESS"],
+    "keywords": ["AXION", "AXION energy"]
+  },
+  {
+    "label": "Malvinas",
+    "Category": "LOCATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Malvinas", "Falkland Islands", "Islas Malvinas"]
+  },
+  {
+    "label": "ATE",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["ATE", "Asociación de Trabajadores del Estado"]
+  },
+  {
+    "label": "CTA",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["CTA", "Central de Trabajadores de la Argentina"]
+  },
+  {
+    "label": "CGT",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["CGT", "Confederación General del Trabajo"]
+  },
+  {
+    "label": "Dengue",
+    "Category": "OTHER",
+    "Topics": ["HEALTH"],
+    "keywords": ["Dengue", "Dengue fever"]
+  },
+  {
+    "label": "Covid",
+    "Category": "OTHER",
+    "Topics": ["HEALTH"],
+    "keywords": ["Covid", "Covid-19", "Coronavirus"]
+  },
+  {
+    "label": "CopaAmerica",
+    "Category": "EVENT",
+    "Topics": ["SPORTS"],
+    "keywords": ["Copa America", "Copa América"]
+  },
+  {
+    "label": "CopaLibertadores",
+    "Category": "EVENT",
+    "Topics": ["SPORTS"],
+    "keywords": ["Copa Libertadores", "Copa Libertadores de América"]
+  },
+  {
+    "label": "CopaSudamericana",
+    "Category": "EVENT",
+    "Topics": ["SPORTS"],
+    "keywords": ["Copa Sudamericana"]
+  },
+  {
+    "label": "INDEC",
+    "Category": "ORGANIZATION",
+    "Topics": ["ECONOMICS"],
+    "keywords": ["INDEC", "Instituto Nacional de Estadística y Censos"]
+  },
+  {
+    "label": "FMI",
+    "Category": "ORGANIZATION",
+    "Topics": ["ECONOMICS"],
+    "keywords": ["FMI", "Fondo Monetario Internacional"]
+  },
+  {
+    "label": "CorteSuprema",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["Corte Suprema", "Corte Suprema de Justicia"]
+  },
+  {
+    "label": "SMN",
+    "Category": "ORGANIZATION",
+    "Topics": ["OTHER"],
+    "keywords": ["SMN", "Servicio Meteorologico Nacional"]
+  }
+]

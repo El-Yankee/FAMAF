@@ -1,0 +1,22 @@
+[
+  {
+    "label": "p12pais",
+    "url": "https://www.pagina12.com.ar/rss/secciones/el-pais/notas",
+    "type": "xml"
+  },
+  {
+    "label": "p12eco",
+    "url": "https://www.pagina12.com.ar/rss/secciones/economia/notas",
+    "type": "xml"
+  },
+  {
+    "label": "lmgral",
+    "url": "https://lmdiario.com.ar/default/rss/general.xml",
+    "type": "xml"
+  },
+  {
+    "label": "lmnoti",
+    "url": "https://lmdiario.com.ar/default/rss/noticias.xml",
+    "type": "xml"
+  }
+]
